@@ -65,54 +65,77 @@ header {
 }
 .nav{
 	display: flex;
+	flex-direction: row;
 	flex-wrap: nowrap;
+	align-items: center;
 	justify-content: space-evenly;
-	text-decoration: none;
 	font-size: 1.5rem;
+	padding-bottom: 1rem;
+}
+a {
+	text-decoration: none;
 }
 #Arthur {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width:100%;
-	padding: 1rem;
 	font-size: 2.2rem;
+	padding: 1rem;
+	border: 1px solid black;
 }
 .who {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	padding: 1rem;
+	margin: 1rem 0rem 1rem 0rem;
+	line-height: 1.6rem;
+	height: 12rem;
+	width: 25rem;
+	border: 1px solid black;
 }
-// .intro {
-// 	display: flex;
-// 	flex-direction: row;
-
-// 	}
-// .who {
-// 	padding: 1rem;
-// 	}
-// .crown {
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-// 	width: 10rem;
-// 	height: 10rem;
-// 		}
-		// nav {
-		// 	display: flex;
-		// 	flex-wrap: nowrap;
-		// 	align-items: space-between;
-		// }
-		// h1 {
-		// 	display: flex;
-		// 	justify-content: center;
-		// 	align-items: center;
-		// }
-		// img {
-		// 	display: flex;
-		// 	flex-wrap: wrap;
-		// 	width: 15rem;
-		// 	height: 15rem;	
-		// }
-
-
+.crown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.crown img{
+	width: 10rem;
+	height: 12rem;
+}
+.intro {
+	width: 100%;
+	height: 14rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem;
+}
+h2 {
+	display: flex;
+	justify-content: center;
+	font-size: 1.6rem;
+	padding-bottom: 1rem;
+}
+.groupTitles {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+h3 {
+	font-size: 1.4rem;
+	padding-bottom: .5rem;
+}
+.indivTitles {
+	line-height: 1.2rem;
+	border: 1px solid cornflowerblue;
+	padding: .7rem;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+	font-size: 1.8rem;
+}
