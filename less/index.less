@@ -51,45 +51,53 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border: 10px solid black;
 }
 
 html, body {
 	height: 100%;
-	header {
-		width: 100%;
 }
-nav {
+.container {
+	max-width: 800px;
+	margin: auto;
+}
+header {
+	width: 100%;
+}
+.nav{
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-evenly;
-	padding: 1rem;
 	text-decoration: none;
+	font-size: 1.5rem;
 }
 #Arthur {
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	align-items: center;
 	width:100%;
 	padding: 1rem;
 	font-size: 2.2rem;
 }
-.intro {
+.who {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: nowrap;
+}
+// .intro {
+// 	display: flex;
+// 	flex-direction: row;
 
-	}
-.who {
-	padding: 1rem;
-	}
-.crown {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 20rem;
-	height: 10rem;
-	margin: 2rem;
-		}
+// 	}
+// .who {
+// 	padding: 1rem;
+// 	}
+// .crown {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	width: 10rem;
+// 	height: 10rem;
+// 		}
 		// nav {
 		// 	display: flex;
 		// 	flex-wrap: nowrap;
@@ -106,5 +114,5 @@ nav {
 		// 	width: 15rem;
 		// 	height: 15rem;	
 		// }
-}
+
 

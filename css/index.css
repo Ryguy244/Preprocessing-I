@@ -129,48 +129,35 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  border: 10px solid black;
 }
 html,
 body {
   height: 100%;
 }
-html header,
-body header {
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+header {
   width: 100%;
 }
-html nav,
-body nav {
+.nav {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  padding: 1rem;
   text-decoration: none;
+  font-size: 1.5rem;
 }
-html #Arthur,
-body #Arthur {
+#Arthur {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 1rem;
   font-size: 2.2rem;
 }
-html .intro,
-body .intro {
+.who {
   display: flex;
   flex-direction: column;
-}
-html .who,
-body .who {
-  padding: 1rem;
-}
-html .crown,
-body .crown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20rem;
-  height: 10rem;
-  margin: 2rem;
+  flex-wrap: nowrap;
 }
