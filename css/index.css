@@ -213,6 +213,15 @@ body {
   width: 25rem;
   border: 1px solid purple;
 }
+.container .intro .who .about {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .container .intro .who .about {
+    padding: 0rem;
+  }
+}
 @media (max-width: 500px) {
   .container .intro .who {
     width: 100%;
@@ -225,8 +234,8 @@ body {
 .container .intro .crown {
   display: flex;
   flex-direction: column;
-  width: 14rem;
-  height: 14rem;
+  width: 16rem;
+  height: 17rem;
   padding: 2rem;
 }
 @media (max-width: 500px) {
@@ -238,7 +247,9 @@ body {
   }
 }
 .container .intro .crown img {
-  height: 14rem;
+  height: 16rem;
+  width: 13rem;
+  padding-bottom: 3rem;
 }
 .container .groupTitles {
   display: flex;
@@ -254,7 +265,7 @@ body {
   color: darkblue;
 }
 @media (max-width: 500px) {
-  .container .groupTitles .secTitles {
+  .container .groupTitles {
     display: flex;
     justify-content: center;
   }
