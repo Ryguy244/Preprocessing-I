@@ -54,6 +54,11 @@ table {
 @oceanic: darkblue;
 @haze: purple;
 @fontS: Impact, Charcoal, sans-serif;
+.flex() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 * {
 	box-sizing: border-box;
@@ -67,11 +72,14 @@ html, body {
 	border: 1px solid black;
 	padding: 1rem;
 	background-color: lightblue;
+	// @media(max-width: 500px) {
+	// 	display: flex;
+	// 	flex-direction: column;
 	.flex() {
 		display: flex;
 		flex-direction: column;
 	}
-	.about() {
+	.headingStyle() {
 		font-size: 1.4rem;
 		padding-bottom: .5rem;
 		text-decoration: underline;
@@ -79,7 +87,7 @@ html, body {
 		color: @oceanic;
 	}
 	.about {
-		.about();
+		.headingStyle();
 	}
 	header {
 		width: 100%;
@@ -112,8 +120,8 @@ html, body {
 		font-family: @fontS;
 		@media(max-width: 500px) {
 			justify-content: center;
-			flex-wrap: nowrap;
-			font-size: 1.5rem;
+			font-size: 2rem;
+			height: 4rem;
 		}
 	}
 	.intro {
@@ -124,6 +132,10 @@ html, body {
 		justify-content: space-evenly;
 		align-items: center;
 		margin: 1rem;
+		@media (max-width: 500px) {
+			flex-direction: column;
+			margin: 0rem;
+		}
 		.who {
 			display: flex;
 			flex-direction: column;
@@ -134,13 +146,26 @@ html, body {
 			height: 14rem;
 			width: 25rem;
 			border: 1px solid purple;
+			@media (max-width: 500px) {
+				width: 100%;
+				margin: 0rem 0rem 0rem 0rem;
+				flex-wrap: wrap;
+				flex-direction: row;
+				height: 100%
+			}
 		}
 		.crown {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			img{
-				width: 14rem;
+			.flex();
+			width: 14rem;
+			height: 14rem;
+			padding: 2rem;
+			@media (max-width: 500px) {
+				 visibility: hidden;
+				 padding: 0rem;
+				 height: 0rem;
+				 width: 0rem;
+			}
+			img {
 				height: 14rem;
 			}
 		}
@@ -152,6 +177,10 @@ html, body {
 		margin:1rem;
 		.secTitles {
 			.about();
+			@media(max-width: 500px) {
+				display: flex;
+				justify-content: center;
+			}
 		}
 		.indivTitles {
 		line-height: 1.2rem;

@@ -183,8 +183,8 @@ body {
 @media (max-width: 500px) {
   .container #Arthur {
     justify-content: center;
-    flex-wrap: nowrap;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    height: 4rem;
   }
 }
 .container .intro {
@@ -195,6 +195,12 @@ body {
   justify-content: space-evenly;
   align-items: center;
   margin: 1rem;
+}
+@media (max-width: 500px) {
+  .container .intro {
+    flex-direction: column;
+    margin: 0rem;
+  }
 }
 .container .intro .who {
   display: flex;
@@ -207,13 +213,31 @@ body {
   width: 25rem;
   border: 1px solid purple;
 }
+@media (max-width: 500px) {
+  .container .intro .who {
+    width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+  }
+}
 .container .intro .crown {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  width: 14rem;
+  height: 14rem;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .container .intro .crown {
+    visibility: hidden;
+    padding: 0rem;
+    height: 0rem;
+    width: 0rem;
+  }
 }
 .container .intro .crown img {
-  width: 14rem;
   height: 14rem;
 }
 .container .groupTitles {
@@ -228,6 +252,12 @@ body {
   text-decoration: underline;
   font-family: Impact, Charcoal, sans-serif;
   color: darkblue;
+}
+@media (max-width: 500px) {
+  .container .groupTitles .secTitles {
+    display: flex;
+    justify-content: center;
+  }
 }
 .container .groupTitles .indivTitles {
   line-height: 1.2rem;
